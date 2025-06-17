@@ -76,22 +76,18 @@ h2 {
 .reset-btn:hover, .new-btn:hover {
   background-color: #333;
 }
-
 .new-btn {
   background-color: white;
   color: red;
 }
-
 .msg-container {
   margin: 20px 0;
 }
-
 #msg {
   font-size: 2rem;
   color: #fff;
   margin-bottom: 10px;
 }
-
 .hide {
   display: none;
 } 
