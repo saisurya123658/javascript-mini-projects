@@ -72,7 +72,6 @@ h2 {
   color: white;
   transition: background-color 0.3s;
 }
-
 .reset-btn:hover, .new-btn:hover {
   background-color: #333;
 }
