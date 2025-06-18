@@ -71,11 +71,9 @@ const showDraw = () => {
   msgContainer.classList.remove("hide");
   gameOver = true;
 };
-
 const disableAllBoxes = () => {
   boxes.forEach(box => box.disabled = true);
 };
-
 const resetGame = () => {
   turnO = true;
   gameOver = false;
@@ -86,8 +84,5 @@ const resetGame = () => {
   msgContainer.classList.add("hide");
   turnText.innerText = "Your Turn (O)";
 };
-
 resetBtn.addEventListener("click", resetGame);
 newGameBtn.addEventListener("click", resetGame);
-
-
