@@ -74,6 +74,7 @@ const showDraw = () => {
 const disableAllBoxes = () => {
   boxes.forEach(box => box.disabled = true);
 };
+
 const resetGame = () => {
   turnO = true;
   gameOver = false;
@@ -81,6 +82,7 @@ const resetGame = () => {
     box.innerText = "";
     box.disabled = false;
   });
+  
   msgContainer.classList.add("hide");
   turnText.innerText = "Your Turn (O)";
 };
