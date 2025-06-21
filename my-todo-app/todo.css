@@ -1,1 +1,149 @@
 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #ffffff;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app img {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    margin: 20px 0;
+    background: #edeef0;
+    padding: 10px 20px;
+}
+
+#input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e14a38;
+}
+
+ul {
+    padding-left: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    position: relative;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 12px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+ul li span {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    line-height: 28px;
+    color: #555;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 22px;
+    width: 28px;
+    height: 28px;
+}
+
+ul li span:hover {
+    background: #d6d6d6;
+}
+
+#filter {
+    margin: 20px 0;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#listcontainer li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+} 
+
