@@ -130,7 +130,6 @@ ul li span:hover {
     border: 1px solid #ccc;
     border-radius: 8px;
 }
-
 #listcontainer li {
     display: flex;
     align-items: center;
@@ -142,4 +141,3 @@ ul li span:hover {
 .hidden {
     display: none;
 } 
-
