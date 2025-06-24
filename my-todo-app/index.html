@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+     <div class="container">
+     <div class="todo-app">
+       <h2>TO-DO LIST<img src="images/icon.png" width="20px" height="30px"></img></h2>
+       <div class="row">
+        
+            <input type="text" id="input" placeholder="ADD YOUR TASK">
+            <button onclick="addtask()">ADD</button>
+       </div> 
+       <select id="filter">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+      </select>
+     <ul id="list-container">
+    </ul>
+    </div>
+     </div>
+     
+    <script src="todo.js"></script>
+</body>
+</html>
