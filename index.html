@@ -4,30 +4,92 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JavaScript Mini Projects</title>
-</head>
-<body style="text-align:center; margin-top:100px;">
-  <h1>JavaScript Mini Projects</h1>
+  <style>
+    /* Background animation */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+    }
 
-  <div style="margin-bottom: 20px;">
-    <a href="tic-tac-toe-ai/index.html" style="font-size:20px; text-decoration:none; color:blue;">
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      margin-top: 80px;
+      font-size: 3rem;
+    }
+
+    .link-container {
+      margin-top: 30px;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 1.5rem;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      margin: 15px;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .tic-tac-toe {
+      background-color: rgba(30, 144, 255, 0.2);
+      color: #00BFFF;
+      border: 1px solid #00BFFF;
+    }
+
+    .todo {
+      background-color: rgba(50, 205, 50, 0.2);
+      color: #32CD32;
+      border: 1px solid #32CD32;
+    }
+
+    .calculator {
+      background-color: rgba(255, 165, 0, 0.2);
+      color: #FFA500;
+      border: 1px solid #FFA500;
+    }
+
+    .weather {
+      background-color: rgba(255, 99, 71, 0.2);
+      color: #FF6347;
+      border: 1px solid #FF6347;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 JavaScript Mini Projects</h1>
+
+  <div class="link-container">
+    <a href="tic-tac-toe-ai/index.html" class="tic-tac-toe">
       ▶️ Launch Tic Tac Toe Game
     </a>
-  </div>
 
-  <div>
-    <a href="my-todo-app/index.html" style="font-size:20px; text-decoration:none; color:green;">
+    <a href="my-todo-app/index.html" class="todo">
       ✅ Launch Todo App
     </a>
+
+    <a href="calculator-js/index.html" class="calculator">
+      🧮 Launch Calculator
+    </a>
+
+    <a href="weather-forecast-app/index.html" class="weather">
+      ☁️ Launch Weather App
+    </a>
   </div>
-    <div>
-    <a href="calculator-js/index.html" style="font-size:20px; text-decoration:none; color:green;">
-      ✅ Launch Calculator
-    </a>
-    </div>
-  <div>
-    <a href="weather-forecast-app/index.html" style="font-size:20px; text-decoration:none; color:green;">
-      ✅ Launch Weather App
-    </a>
-    </div>
 </body>
 </html>
